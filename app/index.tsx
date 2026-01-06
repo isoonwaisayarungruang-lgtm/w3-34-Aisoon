@@ -15,7 +15,8 @@ export default function App(){
 
             
             <Text style={styles.textTitle}>Home</Text>
-            <Button title="ไปหน้า 2" onPress={() => router.navigate('/rectangle')  } />
+            <Button title="คำนวณพื้นที่สี่เหลี่ยม" onPress={() => router.navigate('/rectangle')  } />
+                <Button title="คำนวณลูกบาศก์เมตรเป็นลิตร" onPress={() => router.navigate('/cubicliter')  } />
         </View>
     )
 }
@@ -23,16 +24,18 @@ export default function App(){
 const styles = StyleSheet.create({
     box:{
     flex: 1,
-    backgroundColor: "black",
+    backgroundColor: "lightblue",
     justifyContent:"center",
     alignItems:"center",
+    gap:10
 
     },
     textTitle :{
-        fontSize:22,
+        fontSize:32,
         fontWeight:"700",
         color:"white"
     }
+    
 })
 
 
